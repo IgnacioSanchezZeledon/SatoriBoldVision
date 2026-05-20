@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Satori</title>
+  <meta name="description" content="Hablemos de su próxima licitación. Contacte a Satori por teléfono, WhatsApp, correo o desde el formulario." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div data-parcial="header"></div>
+
+  <main>
+    <!-- ============================================================
+         1. Nosotros — Vanessa
+         ============================================================ -->
+    <section class="seccion-beige nosotros">
+      <div class="contenedor nosotros-grid">
+        <div class="nosotros-foto aparece">
+          <img src="assets/vanessa-retrato.jpg" alt="Vanessa Zeledón, CEO y fundadora de Satori" />
+        </div>
+
+        <div class="aparece">
+          <span class="rol">Nosotros</span>
+          <h1>Vanessa Zeledón</h1>
+          <span class="rol" style="color: var(--azul); margin-top: -0.4rem;">CEO y Fundadora</span>
+          <p>
+            Fundó Satori con una convicción: que cualquier empresa bien preparada
+            puede competir y ganar en las compras del Estado. Combina experiencia
+            empresarial y dominio del marco de contratación pública costarricense
+            (Ley N.° 9986), con un acompañamiento cercano y orientado a la
+            rentabilidad del negocio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. Contacto — franja azul con datos + formulario
+         ============================================================ -->
+    <section class="seccion-azul">
+      <div class="contenedor">
+        <div class="encabezado-seccion aparece" style="text-align: left; margin-left: 0;">
+          <img src="assets/logo-blanco.png" alt="Satori" style="height: 56px; width: auto; margin-bottom: 1.5rem;" />
+          <h2>Hablemos de su próxima licitación.</h2>
+          <p>Cuéntenos un poco sobre su empresa y le respondemos en menos de 24 horas.</p>
+        </div>
+
+        <div class="contacto-bloque">
+          <div class="contacto-info aparece">
+            <ul>
+              <li>
+                <strong>Teléfono / WhatsApp</strong>
+                <a href="tel:+50687040004">+506 8704-0004</a>
+              </li>
+              <li>
+                <strong>Correo</strong>
+                <a href="mailto:info@satoriboldvision.com">info@satoriboldvision.com</a>
+              </li>
+              <li>
+                <strong>Ubicación</strong>
+                San José, Costa Rica
+              </li>
+            </ul>
+
+            <a href="https://wa.me/50687040004" target="_blank" rel="noopener" class="btn btn-primario btn-whatsapp">
+              Escribir por WhatsApp
+            </a>
+          </div>
+
+          <form id="formulario-contacto" class="formulario aparece" novalidate>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name" />
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required autocomplete="email" />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntenos sobre su empresa y el tipo de licitaciones que le interesan."></textarea>
+
+            <button type="submit" class="btn btn-primario">Enviar mensaje</button>
+
+            <!-- Confirmación demo (solo front-end, sin backend) -->
+            <p class="form-mensaje" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-parcial="footer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
