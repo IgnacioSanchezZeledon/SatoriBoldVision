@@ -4,7 +4,6 @@
    - Activa el menú hamburguesa en móvil.
    - Marca el enlace activo según la página.
    - Animaciones sutiles al hacer scroll.
-   - Demo del formulario de contacto (sin backend).
    ============================================================= */
 
 (function () {
@@ -93,33 +92,9 @@
     elementos.forEach((el) => observador.observe(el));
   }
 
-  // ---------- 5. Formulario (demo front-end) ----------
-  function configurarFormulario() {
-    const formulario = document.querySelector("#formulario-contacto");
-    if (!formulario) return;
-    const mensaje = formulario.querySelector(".form-mensaje");
-    formulario.addEventListener("submit", (evento) => {
-      evento.preventDefault();
-      // Validación mínima nativa: si no es válido, dejamos que el
-      // navegador muestre los mensajes por defecto.
-      if (!formulario.checkValidity()) {
-        formulario.reportValidity();
-        return;
-      }
-      const datos = new FormData(formulario);
-      const nombre = (datos.get("nombre") || "").toString().trim();
-      mensaje.textContent =
-        "Gracias" + (nombre ? ", " + nombre : "") +
-        ". Recibimos su mensaje y le responderemos en menos de 24 horas.";
-      mensaje.classList.add("visible");
-      formulario.reset();
-    });
-  }
-
   // ---------- Arranque ----------
   document.addEventListener("DOMContentLoaded", async () => {
     await montarLayout();
     configurarAnimaciones();
-    configurarFormulario();
   });
 })();

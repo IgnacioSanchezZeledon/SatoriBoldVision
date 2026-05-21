@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto — Satori | Hablemos de su próxima licitación</title>
-  <meta name="description" content="Hablemos de su próxima licitación. Contacte a Satori por teléfono, WhatsApp, correo o desde el formulario." />
+  <meta name="description" content="Hablemos de su próxima licitación. Contacte a Satori por teléfono, WhatsApp o correo." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Satori" />
   <link rel="canonical" href="https://satoribv.com/contacto.html" />
   <link rel="alternate" hreflang="es-CR" href="https://satoribv.com/contacto.html" />
   <link rel="alternate" hreflang="x-default" href="https://satoribv.com/contacto.html" />
-  <meta name="theme-color" content="#1F3A5F" />
-  <meta name="msapplication-TileColor" content="#1F3A5F" />
+  <meta name="theme-color" content="#09254A" />
+  <meta name="msapplication-TileColor" content="#09254A" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -57,13 +57,13 @@
         "@type": "ContactPage",
         "url": "https://satoribv.com/contacto.html",
         "name": "Contacto — Satori",
-        "description": "Datos de contacto y formulario de Satori, consultora costarricense en licitaciones y contratación pública.",
+        "description": "Datos de contacto de Satori, consultora costarricense en licitaciones y contratación pública.",
         "mainEntity": {
           "@type": "Organization",
           "name": "Satori",
           "url": "https://satoribv.com/",
           "telephone": "+506 8704-0004",
-          "email": "info@satoribv.com",
+          "email": "info@satoriboldvision.com",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "San José",
@@ -122,17 +122,17 @@
     </section>
 
     <!-- ============================================================
-         2. Contacto — franja azul con datos + formulario
+         2. Contacto — franja azul con datos
          ============================================================ -->
     <section class="seccion-azul">
       <div class="contenedor">
-        <div class="encabezado-seccion aparece" style="text-align: left; margin-left: 0;">
-          <img src="assets/logo-blanco.png" alt="Satori" width="1135" height="546" loading="lazy" style="height: 84px; width: auto; margin-bottom: 1.5rem;" />
-          <h2>Hablemos de su próxima licitación.</h2>
-          <p>Cuéntenos un poco sobre su empresa y le respondemos en menos de 24 horas.</p>
-        </div>
-
         <div class="contacto-bloque">
+          <div class="contacto-intro aparece">
+            <img src="assets/satori_logo_claro_transparente.png" alt="Satori" width="719" height="828" loading="lazy" style="height: 96px; width: auto; margin-bottom: 1.5rem;" />
+            <h2>Hablemos de su próxima licitación.</h2>
+            <p>Cuéntenos un poco sobre su empresa y le respondemos en menos de 24 horas.</p>
+          </div>
+
           <div class="contacto-info aparece">
             <ul>
               <li>
@@ -141,7 +141,11 @@
               </li>
               <li>
                 <strong>Correo</strong>
-                <a href="mailto:info@satoribv.com">info@satoribv.com</a>
+                <a href="mailto:info@satoriboldvision.com">info@satoriboldvision.com</a>
+              </li>
+              <li>
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/satoribv" target="_blank" rel="noopener">@satoribv</a>
               </li>
               <li>
                 <strong>Ubicación</strong>
@@ -153,22 +157,34 @@
               Escribir por WhatsApp
             </a>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <form id="formulario-contacto" class="formulario aparece" novalidate>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required autocomplete="name" />
+    <!-- ============================================================
+         3. Qué esperar — franja beige (separa contacto del footer)
+         ============================================================ -->
+    <section class="seccion-beige">
+      <div class="contenedor">
+        <div class="encabezado-seccion aparece">
+          <h2>Qué esperar al escribirnos</h2>
+        </div>
 
-            <label for="correo">Correo</label>
-            <input type="email" id="correo" name="correo" required autocomplete="email" />
+        <div class="tarjetas">
+          <article class="tarjeta aparece">
+            <h3>Respuesta rápida</h3>
+            <p>Le contestamos en menos de 24 horas laborales para coordinar una primera conversación.</p>
+          </article>
 
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntenos sobre su empresa y el tipo de licitaciones que le interesan."></textarea>
+          <article class="tarjeta aparece">
+            <h3>Primera consulta sin costo</h3>
+            <p>Conversamos sin compromiso para entender su empresa y evaluar si tiene sentido avanzar.</p>
+          </article>
 
-            <button type="submit" class="btn btn-primario">Enviar mensaje</button>
-
-            <!-- Confirmación demo (solo front-end, sin backend) -->
-            <p class="form-mensaje" role="status" aria-live="polite"></p>
-          </form>
+          <article class="tarjeta aparece">
+            <h3>Confidencialidad</h3>
+            <p>La información que comparta sobre su empresa y sus proyectos queda bajo estricta reserva.</p>
+          </article>
         </div>
       </div>
     </section>
