@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,10 @@
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Satori" />
   <link rel="canonical" href="https://satoriboldvision.com/contacto.html" />
+  <link rel="alternate" hreflang="es-CR" href="https://satoriboldvision.com/contacto.html" />
+  <link rel="alternate" hreflang="x-default" href="https://satoriboldvision.com/contacto.html" />
+  <meta name="theme-color" content="#1F3A5F" />
+  <meta name="msapplication-TileColor" content="#1F3A5F" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -29,25 +33,77 @@
 
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Datos estructurados: ContactPage + Person (Vanessa) + breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://satoriboldvision.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://satoriboldvision.com/contacto.html" }
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "url": "https://satoriboldvision.com/contacto.html",
+        "name": "Contacto — Satori",
+        "description": "Datos de contacto y formulario de Satori, consultora costarricense en licitaciones y contratación pública.",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "Satori",
+          "url": "https://satoriboldvision.com/",
+          "telephone": "+506 8704-0004",
+          "email": "info@satoriboldvision.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San José",
+            "addressCountry": "CR"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+506 8704-0004",
+            "contactType": "customer service",
+            "areaServed": "CR",
+            "availableLanguage": "Spanish"
+          }
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Vanessa Zeledón",
+        "jobTitle": "CEO y Fundadora",
+        "worksFor": { "@type": "Organization", "name": "Satori", "url": "https://satoriboldvision.com/" },
+        "image": "https://satoriboldvision.com/assets/vanessa-retrato.jpg",
+        "nationality": "CR"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
   <div data-parcial="header"></div>
 
-  <main>
+  <main id="contenido">
     <!-- ============================================================
          1. Nosotros — Vanessa
          ============================================================ -->
     <section class="seccion-beige nosotros">
       <div class="contenedor nosotros-grid">
         <div class="nosotros-foto aparece">
-          <img src="assets/vanessa-retrato.jpg" alt="Vanessa Zeledón, CEO y fundadora de Satori" />
+          <img src="assets/vanessa-retrato.jpg" alt="Vanessa Zeledón, CEO y fundadora de Satori" width="1400" height="1049" />
         </div>
 
         <div class="aparece">
@@ -71,7 +127,7 @@
     <section class="seccion-azul">
       <div class="contenedor">
         <div class="encabezado-seccion aparece" style="text-align: left; margin-left: 0;">
-          <img src="assets/logo-blanco.png" alt="Satori" style="height: 84px; width: auto; margin-bottom: 1.5rem;" />
+          <img src="assets/logo-blanco.png" alt="Satori" width="1135" height="546" loading="lazy" style="height: 84px; width: auto; margin-bottom: 1.5rem;" />
           <h2>Hablemos de su próxima licitación.</h2>
           <p>Cuéntenos un poco sobre su empresa y le respondemos en menos de 24 horas.</p>
         </div>

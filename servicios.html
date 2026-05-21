@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,10 @@
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Satori" />
   <link rel="canonical" href="https://satoriboldvision.com/servicios.html" />
+  <link rel="alternate" hreflang="es-CR" href="https://satoriboldvision.com/servicios.html" />
+  <link rel="alternate" hreflang="x-default" href="https://satoriboldvision.com/servicios.html" />
+  <meta name="theme-color" content="#1F3A5F" />
+  <meta name="msapplication-TileColor" content="#1F3A5F" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -29,18 +33,70 @@
 
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Datos estructurados: ItemList con los 3 servicios + breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://satoriboldvision.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://satoriboldvision.com/servicios.html" }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Servicios de Satori",
+        "itemListElement": [
+          {
+            "@type": "Service",
+            "position": 1,
+            "name": "Acceso al mercado público",
+            "description": "Inscripción y gestión en SICOP, idoneidad técnica, legal y financiera, documentación al día para participar sin tropiezos.",
+            "serviceType": "Inscripción en SICOP",
+            "provider": { "@type": "Organization", "name": "Satori", "url": "https://satoriboldvision.com/" },
+            "areaServed": { "@type": "Country", "name": "Costa Rica" }
+          },
+          {
+            "@type": "Service",
+            "position": 2,
+            "name": "Ofertas que ganan",
+            "description": "Preparación del expediente, estrategia de precio competitiva y rentable, manejo de aclaraciones y subsanaciones.",
+            "serviceType": "Preparación de ofertas de licitación",
+            "provider": { "@type": "Organization", "name": "Satori", "url": "https://satoriboldvision.com/" },
+            "areaServed": { "@type": "Country", "name": "Costa Rica" }
+          },
+          {
+            "@type": "Service",
+            "position": 3,
+            "name": "Defensa y acompañamiento",
+            "description": "Objeciones al cartel, recursos de revocatoria y apelación, refrendo y acompañamiento durante la ejecución del contrato.",
+            "serviceType": "Asesoría legal en contratación pública",
+            "provider": { "@type": "Organization", "name": "Satori", "url": "https://satoriboldvision.com/" },
+            "areaServed": { "@type": "Country", "name": "Costa Rica" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
   <div data-parcial="header"></div>
 
-  <main>
+  <main id="contenido">
     <!-- ============================================================
          Encabezado de página
          ============================================================ -->

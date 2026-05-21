@@ -65,7 +65,10 @@
     const ruta = location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll(".nav-menu a").forEach((enlace) => {
       const href = enlace.getAttribute("href");
-      if (href === ruta) enlace.classList.add("activo");
+      if (href === ruta) {
+        enlace.classList.add("activo");
+        enlace.setAttribute("aria-current", "page");
+      }
     });
   }
 
